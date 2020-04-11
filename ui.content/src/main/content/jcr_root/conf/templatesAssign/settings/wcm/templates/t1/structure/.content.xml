@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        cq:lastModified="{Date}2020-04-11T11:37:29.790+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/templatesAssign/settings/wcm/templates/t1"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="templatesAssign/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <text
+                jcr:created="{Date}2020-04-11T11:23:57.063+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2020-04-11T11:24:20.023+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="templatesAssign/components/content/text"
+                text="&lt;p>Hello&amp;nbsp;&lt;/p>&#xd;&#xa;"
+                textIsRich="true"/>
+            <responsivegrid
+                jcr:created="{Date}2020-04-11T11:28:10.433+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2020-04-11T11:28:10.433+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid"
+                editable="{Boolean}true">
+                <cq:responsive jcr:primaryType="nt:unstructured"/>
+            </responsivegrid>
+            <image
+                jcr:created="{Date}2020-04-11T11:30:47.483+05:30"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2020-04-11T11:37:29.787+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/image"
+                fileReference="/content/dam/core-components-examples/library/sample-assets/mountain-range.jpg"
+                height="0"
+                width="0"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <phone
+                    jcr:primaryType="nt:unstructured"
+                    title="Smaller Screen"
+                    width="{Long}650"/>
+                <tablet
+                    jcr:primaryType="nt:unstructured"
+                    title="Tablet"
+                    width="{Long}1200"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>
